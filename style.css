@@ -1,0 +1,103 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f6f8;
+}
+
+header {
+    background-color: #145a32;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+.search {
+    text-align: center;
+    margin: 30px;
+}
+
+.search input {
+    padding: 12px;
+    width: 250px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 12px 18px;
+    background-color: #218838;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.heading {
+    text-align: center;
+    color: #145a32;
+}
+
+.houses {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    padding: 25px;
+}
+
+.house-card {
+    background-color: white;
+    width: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px #ccc;
+    padding-bottom: 20px;
+}
+
+.house-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.house-card h3,
+.house-card p {
+    margin: 12px;
+}
+
+.house-card button {
+    margin-left: 12px;
+}
+
+footer {
+    background-color: #145a32;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+.house-form {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px #ccc;
+}
+
+.house-form input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.house-form button {
+    width: 100%;
+    background-color: #145a32;
+}
+
+.house-form button:hover {
+    background-color: #218838;
+}

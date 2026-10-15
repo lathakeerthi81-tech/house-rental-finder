@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>House Rental Finder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>🏠 House Rental Finder</h1>
+        <p>Find your perfect home for rent!</p>
+    </header>
+
+    <section class="search">
+    <input type="text" id="locationInput"
+           placeholder="Enter your location">
+    <button onclick="searchHouses()">Search</button>
+</section>
+<h2 class="heading">Add Your House for Rent</h2>
+
+<form id="houseForm" class="house-form">
+
+    <input type="text" id="houseName"
+           placeholder="House Name" required>
+
+    <input type="text" id="houseLocation"
+           placeholder="Location" required>
+
+    <input type="number" id="houseRent"
+           placeholder="Monthly Rent (₹)"
+           min="1" required>
+    
+    <label for="ownerPhone">Owner's Phone Number:</label>
+
+<input type="tel" id="ownerPhone"
+       placeholder="Enter 10-digit phone number"
+       pattern="[0-9]{10}"
+       maxlength="10" required>
+
+    <input type="number" id="houseBedrooms"
+           placeholder="Number of Bedrooms"
+           min="1" required>
+
+    <label for="houseImage">Choose House Photo:</label>
+
+<input type="file" id="houseImage"
+       accept="image/*" required>
+
+    <button type="submit">Add House</button>
+
+</form>
+
+    <h2 class="heading">Houses Available for Rent</h2>
+
+    <section class="houses">
+
+        <div class="house-card">
+            <img src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=500"
+                 alt="House for rent">
+            <h3>Beautiful Family House</h3>
+            <p>📍 Chikkamagaluru</p>
+            <p>🛏️ 2 Bedrooms</p>
+            <h3>₹8,000 / month</h3>
+            <button>Contact Owner</button>
+        </div>
+
+        <div class="house-card">
+            <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=500"
+                 alt="Modern house for rent">
+            <h3>Modern Independent House</h3>
+            <p>📍 Bengaluru</p>
+            <p>🛏️ 3 Bedrooms</p>
+            <h3>₹15,000 / month</h3>
+            <button>Contact Owner</button>
+        </div>
+
+        <div class="house-card">
+            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=500"
+                 alt="Contemporary house for rent">
+            <h3>Comfortable Family Home</h3>
+            <p>📍 Mysuru</p>
+            <p>🛏️ 2 Bedrooms</p>
+            <h3>₹10,000 / month</h3>
+            <button>Contact Owner</button>
+        </div>
+        <div class="house-card">
+    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=500"
+        alt="House for rent in Hassan">
+
+    <h3>Beautiful House in Hassan</h3>
+    <p>📍 Hassan</p>
+    <p>🛏️ 2 Bedrooms</p>
+    <h3>₹7,000 / month</h3>
+
+    <button>Contact Owner</button>
+</div>
+
+    </section>
+
+    <footer>
+        <p>© 2026 House Rental Finder</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
